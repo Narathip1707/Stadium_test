@@ -1,0 +1,122 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 2 มี.ค. 2568, 10:16:33
+    Author     : Narathip
+*/
+
+/* สไตล์สำหรับหน้าประวัติการจอง */
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* สไตล์สำหรับแท็บ */
+.nav-tabs .nav-link {
+    color: #495057;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    color: #007bff;
+    font-weight: 600;
+}
+
+/* สไตล์สำหรับรายการจอง */
+.booking-item {
+    transition: all 0.3s ease;
+}
+
+.booking-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* สีสำหรับประเภทสนาม */
+.field-type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+.field-A {
+    background-color: #28a745;
+}
+
+.field-B {
+    background-color: #007bff;
+}
+
+.field-C {
+    background-color: #fd7e14;
+}
+
+.field-D {
+    background-color: #6610f2;
+}
+
+/* สไตล์สำหรับสถานะการจอง */
+.badge {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* การตอบสนองบนมือถือ */
+@media (max-width: 768px) {
+    .col-md-4.text-end {
+        margin-top: 15px;
+        text-align: center !important;
+    }
+    
+    .col-md-4.text-end .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

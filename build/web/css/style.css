@@ -1,0 +1,143 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 12 ก.พ. 2568, 12:22:13
+    Author     : Narathip
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Manchester United styling */
+:root {
+    --manutd-red: #DA020E;
+    --manutd-dark-red: #C30000;
+    --manutd-black: #1A1A1A;
+    --manutd-white: #FFFFFF;
+    --manutd-gray: #F2F2F2;
+}
+
+.navbar {
+    background-color: var(--manutd-red) !important;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--manutd-white) !important;
+    padding: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: var(--manutd-white) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--manutd-white) !important;
+    padding: 20px 15px !important;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--manutd-dark-red);
+    color: var(--manutd-white) !important;
+}
+
+.active-link {
+    background-color: var(--manutd-dark-red);
+    color: var(--manutd-white) !important;
+}
+
+.user-welcome {
+    color: var(--manutd-white);
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.nav-item {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.secondary-header {
+    background-color: var(--manutd-black);
+    color: var(--manutd-white);
+    padding: 8px 0;
+    font-size: 0.8rem;
+}
+
+.secondary-header a {
+    color: var(--manutd-white);
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.secondary-header a:hover {
+    color: rgba(255,255,255,0.8);
+}
+
+.login-btn, .register-btn {
+    background-color: transparent;
+    border: 1px solid var(--manutd-white);
+    border-radius: 3px;
+    padding: 5px 15px !important;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover, .register-btn:hover {
+    background-color: var(--manutd-white);
+    color: var(--manutd-red) !important;
+}
+
+.logout-btn {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+    padding: 5px 15px !important;
+    transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.navbar-toggler {
+    border-color: var(--manutd-white);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 991.98px) {
+    .nav-link {
+        padding: 12px 15px !important;
+    }
+
+    .user-welcome {
+        margin: 0.5rem 0;
+        padding: 12px 15px;
+    }
+
+    .secondary-header {
+        display: none;
+    }
+}

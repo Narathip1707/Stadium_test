@@ -1,0 +1,220 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 1 มี.ค. 2568, 22:00:11
+    Author     : Narathip
+*/
+
+:root {
+    --manutd-red: #DA020E;
+    --manutd-dark-red: #C30000;
+    --manutd-black: #1A1A1A;
+    --manutd-white: #FFFFFF;
+    --manutd-gray: #F2F2F2;
+}
+
+/* ระบุว่า CSS เหล่านี้ใช้เฉพาะใน content ไม่กระทบ header */
+.content-body {
+    background-color: var(--manutd-gray);
+    color: var(--manutd-black);
+    font-family: 'Prompt', 'Sukhumvit Set', 'Kanit', 'Arial', sans-serif;
+}
+
+.content-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+.content-header {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--manutd-black);
+    letter-spacing: 1.2px;
+    position: relative;
+    padding-bottom: 0.75rem;
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: 'Prompt', 'Sukhumvit Set', 'Roboto', sans-serif;
+}
+
+.content-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: var(--manutd-red);
+    border-radius: 2px;
+}
+
+
+
+.field-type {
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+.field-A {
+    background-color: #d4edda;
+    color: #155724;
+}
+.field-B {
+    background-color: #cce5ff;
+    color: #004085;
+}
+.field-C {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.booking-item {
+    border: none;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: var(--manutd-white);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.booking-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.payment-form {
+    background-color: var(--manutd-white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.payment-details {
+    display: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    background-color: var(--manutd-gray);
+}
+
+.btn-primary {
+    background-color: var(--manutd-red);
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--manutd-dark-red);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background-color: var(--manutd-black);
+    border: none;
+    padding: 10px 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.alert-info {
+    background-color: var(--manutd-gray);
+    border-color: var(--manutd-red);
+    color: var(--manutd-black);
+}
+
+.total-amount h5 {
+    font-weight: 700;
+    color: #28a745;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+.payment-success-container {
+    text-align: center;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    background-color: var(--manutd-white);
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.payment-success-icon {
+    font-size: 3rem;
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .content-header {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.6rem;
+
+        .booking-item {
+            padding: 1rem;
+        }
+        .payment-form {
+            padding: 1.5rem;
+        }
+    }
+}

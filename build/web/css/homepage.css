@@ -1,0 +1,230 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 ก.พ. 2568, 18:23:01
+    Author     : Narathip
+*/
+/* เพิ่มสไตล์เฉพาะหน้า index */
+:root {
+    --manutd-red: #DA020E;
+    --manutd-dark-red: #C30000;
+    --manutd-black: #1A1A1A;
+    --manutd-white: #FFFFFF;
+    --manutd-gray: #F2F2F2;
+}
+
+/* Hero Section styling */
+.hero-section {
+    position: relative;
+    height: 600px;
+    /*        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/images/football-field-hero.jpg');*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../assets/images/football-field-hero.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.hero-content {
+    max-width: 800px;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.btn-hero {
+    background-color: var(--manutd-red);
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+    background-color: var(--manutd-dark-red);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section headers */
+.section-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.section-header h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--manutd-black);
+    letter-spacing: 1px;
+}
+
+.section-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: var(--manutd-red);
+}
+
+/* Field cards */
+.field-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.field-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.field-card .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.field-card .card-body {
+    padding: 1.5rem;
+}
+
+.field-card .card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.field-feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.field-feature i {
+    font-size: 1.2rem;
+    color: var(--manutd-red);
+    margin-right: 10px;
+}
+
+.price-tag {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #28a745;
+}
+
+.btn-details {
+    background-color: var(--manutd-red);
+    border: none;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-details:hover {
+    background-color: var(--manutd-dark-red);
+}
+
+/* Welcome section */
+.welcome-section {
+    background-color: var(--manutd-gray);
+    padding: 2.5rem 0;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+}
+
+.welcome-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.welcome-section .username {
+    color: var(--manutd-red);
+    font-weight: 700;
+}
+
+.action-buttons .btn {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.action-buttons .btn-danger {
+    background-color: var(--manutd-red);
+    border: none;
+}
+
+.action-buttons .btn-danger:hover {
+    background-color: var(--manutd-dark-red);
+}
+
+.auth-section {
+    background-color: var(--manutd-gray);
+    padding: 4rem 0;
+    border-radius: 8px;
+    margin: 2rem 0 3rem;
+}
+
+.auth-section p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.auth-section .btn {
+    padding: 10px 25px;
+    font-weight: 600;
+    margin: 0 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .welcome-section {
+        text-align: center;
+    }
+
+    .action-buttons .btn {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}

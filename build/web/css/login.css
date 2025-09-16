@@ -1,0 +1,57 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 27 ก.พ. 2568, 18:44:36
+    Author     : Narathip
+*/
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #DA291C, #A51313);
+    background-size: cover;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    text-align: center;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #DA291C;
+}
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+}
+.btn {
+    background-color: #DA291C;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.btn:hover {
+    background-color: #A51E16;
+}
+.link {
+    color: white;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
