@@ -247,7 +247,7 @@ If you have any questions or need help, please:
 
 1. Check the [Issues](https://github.com/yourusername/SportsBooking/issues) page
 2. Create a new issue if needed
-3. Contact: your.email@example.com
+3. Contact: narathip170747@gmail.com
 
 ---
 
