@@ -1,420 +1,360 @@
 <mxfile host="Electron" agent="Mozilla/5.0" version="28.1.2">
   <diagram name="Component Diagram - Working Logic" id="component-diagram-working">
-    <mxGraphModel dx="1434" dy="844" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="2000" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1400" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         
         <!-- Title -->
-        <mxCell id="title-working" value="ตัวอย่าง Working Logic Subsystem" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#D32F2F;" vertex="1" parent="1">
-          <mxGeometry x="40" y="20" width="600" height="40" as="geometry" />
+        <mxCell id="title-working" value="ตัวอย่าง Working Logic Subsystem (3 Roles: Customer / Employee / Admin)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#D32F2F;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="900" height="40" as="geometry" />
         </mxCell>
         
-        <!-- Left Column - Action Servlets/Components -->
+        <!-- ROLE 1: CUSTOMER (TOP SECTION) -->
+        <mxCell id="title-customer" value="Role 1: Customer" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- LEFT COLUMN: Customer Servlets -->
         
         <!-- LoginServlet -->
-        <mxCell id="login-servlet" value="LoginServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="100" width="140" height="50" as="geometry" />
+        <mxCell id="login-servlet" value="LoginServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="130" width="140" height="50" as="geometry" />
         </mxCell>
         
         <!-- RegisterServlet -->
-        <mxCell id="register-servlet" value="RegisterServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="170" width="140" height="50" as="geometry" />
-        </mxCell>
-        
-        <!-- LogoutServlet -->
-        <mxCell id="logout-servlet" value="LogoutServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="240" width="140" height="50" as="geometry" />
+        <mxCell id="register-servlet" value="RegisterServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="140" height="50" as="geometry" />
         </mxCell>
         
         <!-- DashboardServlet -->
-        <mxCell id="dashboard-servlet" value="DashboardServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="310" width="160" height="50" as="geometry" />
+        <mxCell id="dashboard-servlet" value="DashboardServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="270" width="160" height="50" as="geometry" />
         </mxCell>
         
         <!-- FieldServlet -->
-        <mxCell id="field-servlet" value="FieldServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="380" width="140" height="50" as="geometry" />
+        <mxCell id="field-servlet" value="FieldServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="340" width="140" height="50" as="geometry" />
         </mxCell>
         
         <!-- FieldDetailServlet -->
-        <mxCell id="field-detail-servlet" value="FieldDetailServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="450" width="160" height="50" as="geometry" />
+        <mxCell id="field-detail-servlet" value="FieldDetailServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="410" width="160" height="50" as="geometry" />
         </mxCell>
         
         <!-- BookingServlet -->
-        <mxCell id="booking-servlet" value="BookingServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="520" width="150" height="50" as="geometry" />
+        <mxCell id="booking-servlet" value="BookingServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="150" height="50" as="geometry" />
         </mxCell>
         
         <!-- BookingHistoryServlet -->
-        <mxCell id="booking-history-servlet" value="BookingHistoryServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="590" width="180" height="50" as="geometry" />
+        <mxCell id="booking-history-servlet" value="BookingHistoryServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="550" width="180" height="50" as="geometry" />
         </mxCell>
         
         <!-- PaymentServlet -->
-        <mxCell id="payment-servlet" value="PaymentServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="660" width="150" height="50" as="geometry" />
+        <mxCell id="payment-servlet" value="PaymentServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="620" width="150" height="50" as="geometry" />
         </mxCell>
         
-        <!-- AdminServlet -->
-        <mxCell id="admin-servlet" value="AdminServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="730" width="140" height="50" as="geometry" />
+        <!-- ROLE 2: EMPLOYEE (MIDDLE SECTION) -->
+        <mxCell id="title-employee" value="Role 2: Employee" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="710" width="200" height="30" as="geometry" />
         </mxCell>
         
         <!-- ManageFieldServlet -->
-        <mxCell id="manage-field-servlet" value="ManageFieldServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="800" width="170" height="50" as="geometry" />
+        <mxCell id="manage-field-servlet" value="ManageFieldServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="760" width="170" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- LogoutServlet -->
+        <mxCell id="logout-servlet" value="LogoutServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="830" width="140" height="50" as="geometry" />
         </mxCell>
         
         <!-- ForgotPasswordServlet -->
-        <mxCell id="forgot-password-servlet" value="ForgotPasswordServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="40" y="870" width="180" height="50" as="geometry" />
+        <mxCell id="forgot-password-servlet" value="ForgotPasswordServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="180" height="50" as="geometry" />
         </mxCell>
         
-        <!-- Middle Column - Main Components -->
-        
-        <!-- Account Component -->
-        <mxCell id="account-component" value="Account" style="shape=component;align=left;spacingLeft=36;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="280" y="150" width="140" height="60" as="geometry" />
+        <!-- ROLE 3: ADMIN (BOTTOM SECTION) -->
+        <mxCell id="title-admin" value="Role 3: Admin" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="990" width="200" height="30" as="geometry" />
         </mxCell>
         
-        <!-- Field Component -->
-        <mxCell id="field-component" value="Field" style="shape=component;align=left;spacingLeft=36;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="280" y="390" width="140" height="60" as="geometry" />
+        <!-- AdminServlet -->
+        <mxCell id="admin-servlet" value="AdminServlet.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1040" width="140" height="50" as="geometry" />
         </mxCell>
         
-        <!-- Booking Component -->
-        <mxCell id="booking-component" value="Booking" style="shape=component;align=left;spacingLeft=36;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="280" y="570" width="140" height="60" as="geometry" />
+        <!-- MIDDLE COLUMN: Main Components (Horizontal) -->
+        
+        <!-- Customer Component (Role 1) -->
+        <mxCell id="customer-component" value="Customer" style="shape=component;align=left;spacingLeft=36;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="300" width="140" height="60" as="geometry" />
         </mxCell>
         
-        <!-- Employee Component -->
-        <mxCell id="employee-component" value="Employee" style="shape=component;align=left;spacingLeft=36;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="280" y="750" width="140" height="60" as="geometry" />
+        <!-- Field Component (Role 1) -->
+        <mxCell id="field-component" value="Field" style="shape=component;align=left;spacingLeft=36;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="300" width="120" height="60" as="geometry" />
         </mxCell>
         
-        <!-- Customer Component -->
-        <mxCell id="customer-component" value="Customer" style="shape=component;align=left;spacingLeft=36;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="500" y="390" width="140" height="60" as="geometry" />
+        <!-- Booking Component (Role 1) -->
+        <mxCell id="booking-component" value="Booking" style="shape=component;align=left;spacingLeft=36;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="450" width="120" height="60" as="geometry" />
         </mxCell>
         
-        <!-- Right Column - DAO Components -->
-        
-        <!-- UserDAO -->
-        <mxCell id="user-dao" value="UserDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="700" y="130" width="130" height="50" as="geometry" />
+        <!-- Account Component (Role 1) -->
+        <mxCell id="account-component" value="Account" style="shape=component;align=left;spacingLeft=36;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="300" y="450" width="140" height="60" as="geometry" />
         </mxCell>
         
-        <!-- AdminDAO -->
-        <mxCell id="admin-dao" value="AdminDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="700" y="210" width="130" height="50" as="geometry" />
+        <!-- Employee Component (Role 2) -->
+        <mxCell id="employee-component" value="Employee" style="shape=component;align=left;spacingLeft=36;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="300" y="820" width="140" height="60" as="geometry" />
         </mxCell>
         
-        <!-- FieldDAO -->
-        <mxCell id="field-dao" value="FieldDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="700" y="290" width="130" height="50" as="geometry" />
+        <!-- Admin Component (Role 3) -->
+        <mxCell id="admin-component" value="Admin" style="shape=component;align=left;spacingLeft=36;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1040" width="140" height="60" as="geometry" />
         </mxCell>
         
-        <!-- BookingDAO -->
-        <mxCell id="booking-dao" value="BookingDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="700" y="370" width="140" height="50" as="geometry" />
-        </mxCell>
-        
-        <!-- PaymentDAO -->
-        <mxCell id="payment-dao" value="PaymentDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="700" y="450" width="140" height="50" as="geometry" />
-        </mxCell>
-        
-        <!-- fieldDAO (lowercase - actual file) -->
-        <mxCell id="field-dao-lowercase" value="fieldDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="700" y="530" width="130" height="50" as="geometry" />
-        </mxCell>
+        <!-- RIGHT COLUMN: Pages (Horizontal) -->
         
         <!-- index.jsp -->
         <mxCell id="index-php" value="index.jsp" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="500" y="100" width="120" height="50" as="geometry" />
+          <mxGeometry x="760" y="350" width="120" height="50" as="geometry" />
         </mxCell>
         
         <!-- login.jsp -->
         <mxCell id="login-php" value="login.jsp" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="920" y="100" width="120" height="50" as="geometry" />
+          <mxGeometry x="940" y="350" width="120" height="50" as="geometry" />
         </mxCell>
         
         <!-- register.jsp -->
         <mxCell id="register-php" value="register.jsp" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="100" width="120" height="50" as="geometry" />
+          <mxGeometry x="1120" y="350" width="120" height="50" as="geometry" />
         </mxCell>
         
         <!-- System.exe -->
         <mxCell id="system-exe" value="System.exe" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="1240" y="100" width="120" height="50" as="geometry" />
+          <mxGeometry x="1300" y="350" width="120" height="50" as="geometry" />
         </mxCell>
         
-        <!-- Connections from Servlets to Components -->
+        <!-- DAO LAYER -->
         
-        <!-- Login, Register, Logout to Account -->
-        <mxCell id="conn1" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="login-servlet" target="account-component">
+        <!-- Customer Role DAOs -->
+        <mxCell id="user-dao" value="UserDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="40" y="700" width="130" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="field-dao" value="FieldDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="200" y="700" width="130" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="booking-dao" value="BookingDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="360" y="700" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="payment-dao" value="PaymentDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="520" y="700" width="140" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Employee Role DAOs -->
+        <mxCell id="field-dao-lowercase" value="fieldDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="950" width="130" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Admin Role DAOs -->
+        <mxCell id="admin-dao" value="AdminDAO.java" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1150" width="130" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- CONNECTIONS: Horizontal Flow -->
+        
+        <!-- Top Row: Customer path -->
+        <mxCell id="conn-cust-1" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="login-servlet" target="customer-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="125" />
-              <mxPoint x="240" y="180" />
+              <mxPoint x="250" y="125" />
+              <mxPoint x="250" y="275" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <mxCell id="conn2" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="register-servlet" target="account-component">
+        <mxCell id="conn-cust-2" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="register-servlet" target="customer-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="195" />
-              <mxPoint x="240" y="180" />
+              <mxPoint x="250" y="195" />
+              <mxPoint x="250" y="275" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <mxCell id="conn3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="logout-servlet" target="account-component">
+        <mxCell id="conn-cust-3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dashboard-servlet" target="customer-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="265" />
-              <mxPoint x="240" y="180" />
+              <mxPoint x="250" y="265" />
+              <mxPoint x="250" y="275" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <mxCell id="conn4" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="forgot-password-servlet" target="account-component">
+        <mxCell id="conn-field-1" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="field-servlet" target="field-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="895" />
-              <mxPoint x="240" y="180" />
+              <mxPoint x="250" y="335" />
+              <mxPoint x="250" y="275" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <!-- Field Servlets to Field Component -->
-        <mxCell id="conn5" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="field-servlet" target="field-component">
+        <mxCell id="conn-booking-1" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="booking-servlet" target="booking-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="405" />
-              <mxPoint x="240" y="420" />
+              <mxPoint x="250" y="405" />
+              <mxPoint x="250" y="375" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <mxCell id="conn6" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="field-detail-servlet" target="field-component">
+        <mxCell id="conn-payment-1" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="payment-servlet" target="account-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="475" />
-              <mxPoint x="240" y="420" />
+              <mxPoint x="250" y="475" />
+              <mxPoint x="250" y="375" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <mxCell id="conn7" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="manage-field-servlet" target="field-component">
+        <!-- Bottom Row: Employee path -->
+        <mxCell id="conn-emp-1" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="admin-servlet" target="employee-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="825" />
-              <mxPoint x="240" y="420" />
+              <mxPoint x="250" y="725" />
+              <mxPoint x="250" y="925" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <!-- Booking Servlets to Booking Component -->
-        <mxCell id="conn8" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="booking-servlet" target="booking-component">
+        <mxCell id="conn-emp-2" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="manage-field-servlet" target="employee-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="545" />
-              <mxPoint x="240" y="600" />
+              <mxPoint x="250" y="795" />
+              <mxPoint x="250" y="925" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <mxCell id="conn9" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="booking-history-servlet" target="booking-component">
+        <mxCell id="conn-emp-3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="logout-servlet" target="employee-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="615" />
-              <mxPoint x="240" y="600" />
+              <mxPoint x="250" y="865" />
+              <mxPoint x="250" y="925" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <mxCell id="conn10" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="payment-servlet" target="booking-component">
+        <mxCell id="conn-emp-4" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="field-detail-servlet" target="employee-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="685" />
-              <mxPoint x="240" y="600" />
+              <mxPoint x="250" y="935" />
+              <mxPoint x="250" y="925" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <!-- Admin and Dashboard to Employee -->
-        <mxCell id="conn11" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="admin-servlet" target="employee-component">
+        <mxCell id="conn-emp-5" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="booking-history-servlet" target="employee-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="755" />
-              <mxPoint x="240" y="780" />
+              <mxPoint x="250" y="1005" />
+              <mxPoint x="250" y="925" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <mxCell id="conn12" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dashboard-servlet" target="employee-component">
+        <mxCell id="conn-emp-6" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="forgot-password-servlet" target="employee-component">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="240" y="335" />
-              <mxPoint x="240" y="780" />
+              <mxPoint x="250" y="1075" />
+              <mxPoint x="250" y="925" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <!-- Components to DAOs -->
-        
-        <!-- Account to UserDAO and AdminDAO -->
-        <mxCell id="conn13" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="account-component" target="user-dao">
+        <!-- Horizontal main flow: Account -> index -> login -> register -> System -->
+        <mxCell id="conn-main-1" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="account-component" target="index-php">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
-        <mxCell id="conn14" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="account-component" target="admin-dao">
+        <mxCell id="conn-main-2" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="index-php" target="login-php">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
-        <!-- Field to FieldDAO and fieldDAO -->
-        <mxCell id="conn15" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="field-component" target="field-dao">
+        <mxCell id="conn-main-3" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="login-php" target="register-php">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
-        <mxCell id="conn16" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="field-component" target="field-dao-lowercase">
+        <mxCell id="conn-main-4" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="register-php" target="system-exe">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Customer and Employee to index -->
+        <mxCell id="conn-cust-to-index" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="customer-component" target="index-php">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="650" y="435" />
-              <mxPoint x="650" y="555" />
+              <mxPoint x="680" y="275" />
+              <mxPoint x="680" y="363" />
             </Array>
           </mxGeometry>
         </mxCell>
         
-        <!-- Booking to BookingDAO and PaymentDAO -->
-        <mxCell id="conn17" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="booking-component" target="booking-dao">
+        <mxCell id="conn-emp-to-index" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="employee-component" target="index-php">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="400" as="sourcePoint" />
             <mxPoint x="450" y="350" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="650" y="585" />
-              <mxPoint x="650" y="395" />
+              <mxPoint x="680" y="925" />
+              <mxPoint x="680" y="388" />
             </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="conn18" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="booking-component" target="payment-dao">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="400" as="sourcePoint" />
-            <mxPoint x="450" y="350" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="650" y="615" />
-              <mxPoint x="650" y="475" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Employee to AdminDAO -->
-        <mxCell id="conn19" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="employee-component" target="admin-dao">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="400" as="sourcePoint" />
-            <mxPoint x="450" y="350" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="650" y="780" />
-              <mxPoint x="650" y="235" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- Account to index, Employee to index, Customer to index -->
-        <mxCell id="conn20" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="account-component" target="index-php">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="400" as="sourcePoint" />
-            <mxPoint x="450" y="350" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="460" y="180" />
-              <mxPoint x="460" y="125" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="conn21" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="employee-component" target="index-php">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="400" as="sourcePoint" />
-            <mxPoint x="450" y="350" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="350" y="700" />
-              <mxPoint x="460" y="700" />
-              <mxPoint x="460" y="250" />
-              <mxPoint x="560" y="250" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="conn22" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="customer-component" target="index-php">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="400" as="sourcePoint" />
-            <mxPoint x="450" y="350" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="570" y="250" />
-              <mxPoint x="560" y="250" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        
-        <!-- index to login to register to system -->
-        <mxCell id="conn23" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="index-php" target="login-php">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="400" as="sourcePoint" />
-            <mxPoint x="450" y="350" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="conn24" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="login-php" target="register-php">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="400" as="sourcePoint" />
-            <mxPoint x="450" y="350" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="conn25" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="register-php" target="system-exe">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="400" y="400" as="sourcePoint" />
-            <mxPoint x="450" y="350" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         
